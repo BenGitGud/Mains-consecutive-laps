@@ -1,0 +1,13 @@
+{
+    "name": "Class Rank: Mains Format",
+    "author": "Benjamin Jacobs",
+    "author_uri": "https://github.com/BenGitGud",
+    "description": "Adds a \"Best Consecutive Heats\" class ranking method",
+    "info_uri": "https://github.com/BenGitGud/Mains-consecutive-laps",
+    "license": "RotorHazard",
+    "license_uri": "https://github.com/RotorHazard/RotorHazard/blob/main/LICENSE",
+    "version": "1.0",
+    "required_rhapi_version": "1.0",
+    "update_uri": null,
+    "text_domain": null
+}
