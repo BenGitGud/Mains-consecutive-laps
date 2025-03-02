@@ -34,8 +34,12 @@ def rank_best_consecutive_races(rhapi, race_class, args):
     
                 laps = rhapi.db.laps_by_pilotrun(run.id)
                 laps = [x for x in laps if not x.deleted]  # Remove deleted laps
+            
                 for lap in laps[start_lap:]:
                     combined_races[run.pilot_id].append(lap)
+                else:
+                logger.warning("Failed building ranking, race result not available")
+                return False, {}  
 
     # Ranking pilots based on their best 3 consecutive races
     leaderboard = []
